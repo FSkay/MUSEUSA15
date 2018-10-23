@@ -3,6 +3,7 @@ package com.example.dicossoftware.museusa15;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void adicionarLivro(View v) {
+        EditText etMom = findViewById(R.id.etNmom)
         EditText etNome = findViewById(R.id.etNomeLivro);
         EditText etAno = findViewById(R.id.etAno);
 

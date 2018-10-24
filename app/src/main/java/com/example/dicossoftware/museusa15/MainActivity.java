@@ -12,16 +12,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void adicionarLivro(View v) {
-        EditText etMom = findViewById(R.id.etNmom)
-        EditText etNome = findViewById(R.id.etNomeObjeto);
+    public void adicionarArtefato(View v) {
+        //EditText etNMom = findViewById(R.id.etNMom);
+        EditText etNomeObjeto = findViewById(R.id.etNomeObjeto);
         EditText etAno = findViewById(R.id.etAno);
-        EditText
+        EditText etDoador = findViewById(R.id.etDoador);
 
         AdicionarArtefato adicionarArtefato = new AdicionarArtefato();
 
-        adicionarArtefato.execute(etNome.getText().toString(),
-                etAno.getText().toString());
+        adicionarArtefato.execute(etNomeObjeto.getText().toString(), etAno.getText().toString(),
+                etDoador.getText().toString());
 
     }
 }

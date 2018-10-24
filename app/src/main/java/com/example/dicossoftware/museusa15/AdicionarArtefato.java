@@ -21,7 +21,7 @@ public class AdicionarArtefato extends AsyncTask<String, Void, String> {
 
         String r = new String();
         try {
-            url = new URL("http://10.0.2.2:80//android/json1/listar_livros.php");
+            url = new URL("http://10.0.2.2:80//android/json1/listar_artefatos.php");
 
             JSONObject artefato = new JSONObject();
             artefato.put("nome", strings[1]);

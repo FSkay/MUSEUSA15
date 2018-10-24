@@ -23,7 +23,7 @@ public class AdicionarArtefato extends AsyncTask<String, Void, String> {
         try {
             url = new URL("http://10.0.2.2:80//android/json1/listar_livros.php");
 
-            JSONObject livro = new JSONObject();
+            JSONObject artefato = new JSONObject();
             artefato.put("nome", strings[0]);
             artefato.put("ano", strings[1]);
 
@@ -32,7 +32,7 @@ public class AdicionarArtefato extends AsyncTask<String, Void, String> {
             urlConnection.setRequestMethod("POST");
 
             Writer writer = new BufferedWriter(new OutputStreamWriter(urlConnection.getOutputStream(), "UTF-8"));
-            writer.write(livro.toString());
+            writer.write(artefato.toString());
 
             writer.close();
 

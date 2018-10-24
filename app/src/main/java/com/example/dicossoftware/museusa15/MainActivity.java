@@ -14,8 +14,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void adicionarLivro(View v) {
         EditText etMom = findViewById(R.id.etNmom)
-        EditText etNome = findViewById(R.id.etNomeLivro);
+        EditText etNome = findViewById(R.id.etNomeObjeto);
         EditText etAno = findViewById(R.id.etAno);
+        EditText
 
         AdicionarArtefato adicionarArtefato = new AdicionarArtefato();
 

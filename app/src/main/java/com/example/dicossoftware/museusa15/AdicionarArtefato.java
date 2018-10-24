@@ -24,8 +24,10 @@ public class AdicionarArtefato extends AsyncTask<String, Void, String> {
             url = new URL("http://10.0.2.2:80//android/json1/listar_livros.php");
 
             JSONObject artefato = new JSONObject();
-            artefato.put("nome", strings[0]);
-            artefato.put("ano", strings[1]);
+            artefato.put("nome", strings[1]);
+            artefato.put("ano", strings[2]);
+            artefato.put("doador", strings[3]);
+            
 
             urlConnection = (HttpURLConnection) url.openConnection();
 

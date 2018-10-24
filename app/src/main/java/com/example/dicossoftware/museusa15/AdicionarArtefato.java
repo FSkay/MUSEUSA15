@@ -27,7 +27,7 @@ public class AdicionarArtefato extends AsyncTask<String, Void, String> {
             artefato.put("nome", strings[1]);
             artefato.put("ano", strings[2]);
             artefato.put("doador", strings[3]);
-            
+
 
             urlConnection = (HttpURLConnection) url.openConnection();
 

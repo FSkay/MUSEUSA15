@@ -61,3 +61,5 @@ public class AdicionarArtefato extends AsyncTask<String, Void, String> {
 
 
         }
+    }
+}

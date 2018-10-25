@@ -11,8 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="38dp"
         android:ems="10"
+        android:hint="Nº MOM -"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColorHint="@android:color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="74dp" />
 
@@ -20,7 +21,8 @@
         android:id="@+id/textView"
         android:layout_width="360dp"
         android:layout_height="50dp"
-        android:text="Coloque as informações para cadastrar um artefato"
+        android:text="Coloque as informações para cadastrar um artefato."
+        android:textSize="18sp"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="16dp" />
 
@@ -29,8 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="38dp"
         android:ems="10"
+        android:hint="Nome objeto"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColorHint="@android:color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="121dp" />
 

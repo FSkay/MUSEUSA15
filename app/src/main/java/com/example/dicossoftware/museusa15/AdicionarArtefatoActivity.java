@@ -3,6 +3,7 @@ package com.example.dicossoftware.museusa15;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class AdicionarArtefatoActivity extends AppCompatActivity {
 
@@ -11,7 +12,21 @@ public class AdicionarArtefatoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_artefato);
     }
-    public void AdicionarArtefato (View v){
+
+    public void adicionarArtefato(View v) {
+
+        ArtefatosCRUDRemoto c = new ArtefatosCRUDRemoto();
+
+        //EditText etNMom = findViewById(R.id.etNMom);
+        EditText nomeobjeto = findViewById(R.id.etNomeObjeto);
+        EditText ano = findViewById(R.id.etAno);
+        EditText doador = findViewById(R.id.etDoador);
+
+        ArtefatosCRUDRemoto adicionarArtefato = new ArtefatosCRUDRemoto();
+
+        c.execute("POST", nomeobjeto.getText().toString(),
+                ano.getText().toString(),
+                doador.getText().toString());
 
     }
 }

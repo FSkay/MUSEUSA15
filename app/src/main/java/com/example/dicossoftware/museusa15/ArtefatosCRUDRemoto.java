@@ -28,17 +28,17 @@ public class ArtefatosCRUDRemoto extends AsyncTask <String, Void, String> {
             switch (strings[0]){
                 case "POST":
 
-                    JSONObject cliente = new JSONObject();
-                    cliente.put("nome", strings[1]);
-                    cliente.put("rua", strings[2]);
-                    cliente.put("numero", strings[3]);
-                    cliente.put("bairro", strings[4]);
+                    JSONObject artefato = new JSONObject();
+                    artefato.put("nome", strings[1]);
+                    artefato.put("rua", strings[2]);
+                    artefato.put("numero", strings[3]);
+                    artefato.put("bairro", strings[4]);
 
 
                     urlConnection.setRequestMethod("POST");
 
                     Writer writer = new BufferedWriter(new OutputStreamWriter(urlConnection.getOutputStream(), "UTF-8"));
-                    writer.write(cliente.toString());
+                    writer.write(artefato.toString());
 
                     writer.close();
 

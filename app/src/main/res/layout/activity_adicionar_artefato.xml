@@ -44,6 +44,7 @@
         android:ems="10"
         android:hint="Época"
         android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="167dp" />
 
@@ -54,6 +55,7 @@
         android:ems="10"
         android:hint="Doador"
         android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="214dp" />
 
@@ -67,7 +69,7 @@
         tools:layout_editor_absoluteY="473dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivObjeto"
         android:layout_width="350dp"
         android:layout_height="199dp"
         app:srcCompat="@drawable/ic_launcher_background"

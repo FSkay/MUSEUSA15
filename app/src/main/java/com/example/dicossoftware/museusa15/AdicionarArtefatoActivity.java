@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class AdicionarArtefatoActivity extends AppCompatActivity {
 
@@ -21,6 +22,7 @@ public class AdicionarArtefatoActivity extends AppCompatActivity {
         EditText nomeobjeto = findViewById(R.id.etNomeObjeto);
         EditText ano = findViewById(R.id.etAno);
         EditText doador = findViewById(R.id.etDoador);
+        ImageView img = findViewById(R.id.ivObjeto);
 
         ArtefatosCRUDRemoto adicionarArtefato = new ArtefatosCRUDRemoto();
 

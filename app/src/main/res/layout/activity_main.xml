@@ -11,6 +11,6 @@
         android:layout_width="315dp"
         android:layout_height="347dp"
         app:srcCompat="@drawable/ic_launcher_background"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="142dp" />
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="98dp" />
 </android.support.constraint.ConstraintLayout>

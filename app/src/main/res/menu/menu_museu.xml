@@ -4,7 +4,9 @@
 
     <item
         android:id="@+id/menuAdicionar"
-        android:title="Item"></item>
+        android:title="Adicionar"></item>
     <item android:title="Item" />
-    <item android:title="Item" />
+    <item
+        android:id="@+id/menuListar"
+        android:title="Listar" />
 </menu>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdicionarArtefatoActivity">
+    tools:context=".ListarArtefatoActivity">
 
     <EditText
         android:id="@+id/etNMom"
@@ -44,6 +44,7 @@
         android:ems="10"
         android:hint="Época"
         android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="167dp" />
 
@@ -54,6 +55,7 @@
         android:ems="10"
         android:hint="Doador"
         android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="214dp" />
 
@@ -61,8 +63,8 @@
         android:id="@+id/btCadastrar"
         android:layout_width="297dp"
         android:layout_height="53dp"
-        android:onClick="adicionarArtefato"
-        android:text="Cadastrar"
+        android:onClick="editarArtefato"
+        android:text="Editar"
         tools:layout_editor_absoluteX="44dp"
         tools:layout_editor_absoluteY="473dp" />
 
@@ -73,4 +75,5 @@
         app:srcCompat="@drawable/ic_launcher_background"
         tools:layout_editor_absoluteX="17dp"
         tools:layout_editor_absoluteY="261dp" />
+
 </android.support.constraint.ConstraintLayout>

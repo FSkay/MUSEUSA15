@@ -29,10 +29,10 @@ public class ArtefatosCRUDRemoto extends AsyncTask <String, Void, String> {
                 case "POST":
 
                     JSONObject artefato = new JSONObject();
-                    artefato.put("nome", strings[1]);
-                    artefato.put("rua", strings[2]);
-                    artefato.put("numero", strings[3]);
-                    artefato.put("bairro", strings[4]);
+                    artefato.put("nomeObj", strings[1]);
+                    artefato.put("epoca", strings[2]);
+                    artefato.put("doador", strings[3]);
+                    artefato.put("img", strings[4]);
 
 
                     urlConnection.setRequestMethod("POST");

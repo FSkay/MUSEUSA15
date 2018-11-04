@@ -25,10 +25,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, AdicionarArtefatoActivity.class);
             startActivity(intent);
         } else if (item.getItemId() == R.id.menuListar) {
-            Intent intent = new Intent(this, ListarActivity.class);
+            Intent intent = new Intent(this, ListarArtefatoActivity.class);
             startActivity(intent);
         }
         return true;
     }
+
 
 }

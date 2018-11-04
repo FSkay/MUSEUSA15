@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AdicionarArtefatoActivity" />
-        <activity android:name=".EditarArtefatoActivity"></activity>
+        <activity android:name=".EditarArtefatoActivity" />
+        <activity android:name=".ListarArtefatoActivity"></activity>
     </application>
 
 </manifest>

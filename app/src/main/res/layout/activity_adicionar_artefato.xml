@@ -6,73 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".AdicionarArtefatoActivity">
 
-    <EditText
-        android:id="@+id/etNMom"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:hint="Nº MOM -"
-        android:inputType="textPersonName"
-        android:textColorHint="@android:color/black"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="74dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="360dp"
-        android:layout_height="50dp"
-        android:text="Coloque as informações para cadastrar um artefato."
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Coloque as informações para cadastrar um artefato."
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="16dp" />
 
-    <EditText
-        android:id="@+id/etNomeObjeto"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:hint="Nome objeto:"
-        android:inputType="textPersonName"
-        android:textColorHint="@android:color/black"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="121dp" />
+        <EditText
+            android:id="@+id/etNomeObjeto"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:hint="Nome objeto:"
+            android:inputType="textPersonName"
+            android:textColorHint="@android:color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="74dp" />
 
-    <EditText
-        android:id="@+id/etAno"
-        android:layout_width="wrap_content"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:hint="Época"
-        android:inputType="textPersonName"
-        android:textColorHint="@android:color/black"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="167dp" />
+        <EditText
+            android:id="@+id/etAno"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:ems="10"
+            android:hint="Época"
+            android:inputType="textPersonName"
+            android:textColorHint="@android:color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="119dp" />
 
-    <EditText
-        android:id="@+id/etDoador"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:hint="Doador"
-        android:inputType="textPersonName"
-        android:textColorHint="@android:color/black"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="214dp" />
+        <EditText
+            android:id="@+id/etDoador"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Doador"
+            android:inputType="textPersonName"
+            android:textColorHint="@android:color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="166dp" />
 
-    <Button
-        android:id="@+id/btCadastrar"
-        android:layout_width="297dp"
-        android:layout_height="53dp"
-        android:onClick="adicionarArtefato"
-        android:text="Cadastrar"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="473dp" />
+        <ImageView
+            android:id="@+id/ivObjeto"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="219dp" />
 
-    <ImageView
-        android:id="@+id/ivObjeto"
-        android:layout_width="350dp"
-        android:layout_height="199dp"
-        app:srcCompat="@drawable/ic_launcher_background"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="261dp" />
+        <Button
+            android:id="@+id/btCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:onClick="adicionarArtefato"
+            android:text="Cadastrar"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="452dp" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

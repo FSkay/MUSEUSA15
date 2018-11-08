@@ -44,8 +44,35 @@ public class ArtefatosCRUDRemoto extends AsyncTask <String, Void, String> {
 
                     break;
                 case "PUT":
+                    artefato = new JSONObject();
+                    artefato.put("idmom", strings[1]);
+                    artefato.put("nomeObj", strings[2]);
+                    artefato.put("epoca", strings[3]);
+                    artefato.put("doador", strings[4]);
+                    artefato.put("img", strings[5]);
+
+                    urlConnection.setRequestMethod("PUT");
+
+                    writer = new BufferedWriter(new OutputStreamWriter(urlConnection.getOutputStream(), "UTF-8"));
+                    writer.write(artefato.toString());
+
+                    writer.close();
 
                     break;
+                case "DELETE":
+
+                    artefato = new JSONObject();
+                    artefato.put("id", strings[1]);
+
+                    urlConnection.setRequestMethod("DELETE");
+
+                    writer = new BufferedWriter(new OutputStreamWriter(urlConnection.getOutputStream(), "UTF-8"));
+                    writer.write(artefato.toString());
+
+                    writer.close();
+                    break;
+
+
             }
 
 

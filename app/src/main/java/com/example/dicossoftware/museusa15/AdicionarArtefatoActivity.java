@@ -1,7 +1,9 @@
 package com.example.dicossoftware.museusa15;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -12,6 +14,18 @@ public class AdicionarArtefatoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_artefato);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == R.id.menuAdicionar) {
+            Intent intent = new Intent(this, AdicionarArtefatoActivity.class);
+            startActivity(intent);
+        } else if (item.getItemId() == R.id.menuListar) {
+            Intent intent = new Intent(this, ListarArtefatoActivity.class);
+            startActivity(intent);
+        }
+        return true;
     }
 
     public void adicionarArtefato(View v) {
@@ -24,11 +38,13 @@ public class AdicionarArtefatoActivity extends AppCompatActivity {
         EditText doador = findViewById(R.id.etDoador);
         ImageView img = findViewById(R.id.ivObjeto);
 
-        ArtefatosCRUDRemoto adicionarArtefato = new ArtefatosCRUDRemoto();
-
         c.execute("POST", nomeobjeto.getText().toString(),
                 ano.getText().toString(),
                 doador.getText().toString());
+        finish();
 
+    }
+    public void cancelar(View v){
+        finish();
     }
 }

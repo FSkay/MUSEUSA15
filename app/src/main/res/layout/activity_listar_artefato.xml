@@ -80,6 +80,12 @@
             android:text="Listar"
             tools:layout_editor_absoluteX="44dp"
             tools:layout_editor_absoluteY="473dp" />
+
+        <Button
+            android:id="@+id/btProx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Próximo" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

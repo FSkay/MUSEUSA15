@@ -22,7 +22,7 @@ public class ArtefatosCRUDRemoto extends AsyncTask <String, Void, String> {
         String resposta = new String();
         try {
 
-            url = new URL("http://10.0.2.2:80//android/json1/crud_clientes.php");
+            url = new URL("http://10.0.2.2:80//museu_crud.php");
             urlConnection = (HttpURLConnection) url.openConnection();
 
             switch (strings[0]){
@@ -31,8 +31,9 @@ public class ArtefatosCRUDRemoto extends AsyncTask <String, Void, String> {
                     JSONObject artefato = new JSONObject();
                     artefato.put("nomeObj", strings[1]);
                     artefato.put("epoca", strings[2]);
-                    artefato.put("doador", strings[3]);
-                    artefato.put("img", strings[4]);
+                    artefato.put("material", strings[3]);
+                    artefato.put("doador", strings[4]);
+                    artefato.put("img", strings[5]);
 
 
                     urlConnection.setRequestMethod("POST");
@@ -45,9 +46,9 @@ public class ArtefatosCRUDRemoto extends AsyncTask <String, Void, String> {
                     break;
                 case "PUT":
                     artefato = new JSONObject();
-                    artefato.put("idmom", strings[1]);
-                    artefato.put("nomeObj", strings[2]);
-                    artefato.put("epoca", strings[3]);
+                    artefato.put("nomeObj", strings[1]);
+                    artefato.put("epoca", strings[2]);
+                    artefato.put("material", strings[3]);
                     artefato.put("doador", strings[4]);
                     artefato.put("img", strings[5]);
 

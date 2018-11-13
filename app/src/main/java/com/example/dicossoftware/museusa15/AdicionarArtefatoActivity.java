@@ -35,11 +35,13 @@ public class AdicionarArtefatoActivity extends AppCompatActivity {
         //EditText etNMom = findViewById(R.id.etNMom);
         EditText nomeobjeto = findViewById(R.id.etNomeObjeto);
         EditText epoca = findViewById(R.id.etAno);
+        EditText material = findViewById(R.id.etMaterial);
         EditText doador = findViewById(R.id.etDoador);
         ImageView img = findViewById(R.id.ivObjeto);
 
         c.execute("POST", nomeobjeto.getText().toString(),
                 epoca.getText().toString(),
+                material.getText().toString(),
                 doador.getText().toString(),
                 img.getImageMatrix().toString());
         finish();

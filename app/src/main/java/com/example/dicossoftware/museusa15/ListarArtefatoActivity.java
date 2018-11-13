@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import org.json.JSONArray;
+
 public class ListarArtefatoActivity extends AppCompatActivity {
 
     @Override
@@ -12,6 +14,7 @@ public class ListarArtefatoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listar_artefato);
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menuAdicionar) {
@@ -24,5 +27,37 @@ public class ListarArtefatoActivity extends AppCompatActivity {
         return true;
     }
 
+    public void lArtefato() {
+        String url = "http://localhost/listar_artefatos.php";
+        artefato.post(url, new AsyncHttpResponseHandler()) {
+            @Override
+            public void onSuccess ( int statusCode, Header[] headers,byte[] responseBody)
+            if (statusCode == 200) {
+                lArtefato(new String(responseBody));
 
+            }
+
+        }
+        @Override
+        Public void onFailure ( int statusCode, Header[] headers,byte[] responseBody){
+
+        }
+    }
+
+    private void lArtefato(String r) {
+        ArryList<ArtefatosCRUDRemoto> lista = new ArryList<ArtefatosCRUDRemoto>();
+        try {
+            JSONArray JSON = new JSONArray(r);
+            for (int i = 0; i < JSON.length(); i++) {
+                ArtefatosCRUDRemoto a = new ArtefatosCRUDRemoto();
+                a.setnomid
+
+
+            }
+        }catch{
+            
+        }
+
+
+    }
 }

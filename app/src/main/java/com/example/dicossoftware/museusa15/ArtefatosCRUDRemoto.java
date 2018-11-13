@@ -62,7 +62,7 @@ public class ArtefatosCRUDRemoto extends AsyncTask <String, Void, String> {
                 case "DELETE":
 
                     artefato = new JSONObject();
-                    artefato.put("id", strings[1]);
+                    artefato.put("idmom", strings[1]);
 
                     urlConnection.setRequestMethod("DELETE");
 

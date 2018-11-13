@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
 
 public class EditarArtefatoActivity extends AppCompatActivity {
 
@@ -39,4 +42,25 @@ public class EditarArtefatoActivity extends AppCompatActivity {
         }
         return true;
     }
+    public void editar (View view){
+        ArtefatosCRUDRemoto c = new ArtefatosCRUDRemoto();
+
+        //EditText etNMom = findViewById(R.id.etNMom);
+        EditText nomeobjeto = findViewById(R.id.etNomeObjeto);
+        EditText epoca = findViewById(R.id.etAno);
+        EditText doador = findViewById(R.id.etDoador);
+        ImageView img = findViewById(R.id.ivObjeto);
+
+        c.execute("PUT", nomeobjeto.getText().toString(),
+                epoca.getText().toString(),
+                doador.getText().toString(),
+                img.getImageMatrix().toString());
+        finish();
+
+
+    }
+    //Para encerrar uma atividade, chame o método finish()
+    public void cancelar(View view){ finish();
+    }
+
 }

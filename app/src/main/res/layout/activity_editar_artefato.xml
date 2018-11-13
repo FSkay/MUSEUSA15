@@ -49,11 +49,11 @@
         tools:layout_editor_absoluteY="221dp" />
 
     <Button
-        android:id="@+id/btCadastrar"
+        android:id="@+id/btEditar"
         android:layout_width="297dp"
         android:layout_height="53dp"
-        android:onClick="listarArtefato"
-        android:text="Listar"
+        android:onClick="editar"
+        android:text="Editar"
         tools:layout_editor_absoluteX="44dp"
         tools:layout_editor_absoluteY="473dp" />
 

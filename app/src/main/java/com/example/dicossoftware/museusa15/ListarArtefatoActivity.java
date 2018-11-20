@@ -26,25 +26,8 @@ public class ListarArtefatoActivity extends AppCompatActivity {
         }
         return true;
     }
-
-    public void ListarArtefato() {
-        String url = "http://localhost/listar_artefatos.php";
-       // artefato.post(url, new AsyncHttpResponseHandler()) {
-            @Override
-            public void onSuccess ( int statusCode, Header[] headers,byte[] responseBody)
-            if (statusCode == 200) {
-                ListarArtefato(new String(responseBody));
-
-            }
-
-        }
-        @Override
-        Public void onFailure ( int statusCode, Header[] headers,byte[] responseBody){
-
-        }
-    }
-
-    private void ListarArtefato(String r) {
+    
+    public void ListarArtefato(String r) {
         ArryList<ArtefatosCRUDRemoto> lista = new ArryList<ArtefatosCRUDRemoto>();
         try {
             JSONArray JSON = new JSONArray(r);
@@ -54,9 +37,9 @@ public class ListarArtefatoActivity extends AppCompatActivity {
 
 
             }
-        }catch{
+        } catch {
 
-       }
+        }
 
 
     }

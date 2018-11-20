@@ -27,13 +27,13 @@ public class ListarArtefatoActivity extends AppCompatActivity {
         return true;
     }
 
-    public void lArtefato() {
+    public void ListarArtefato() {
         String url = "http://localhost/listar_artefatos.php";
-        artefato.post(url, new AsyncHttpResponseHandler()) {
+       // artefato.post(url, new AsyncHttpResponseHandler()) {
             @Override
             public void onSuccess ( int statusCode, Header[] headers,byte[] responseBody)
             if (statusCode == 200) {
-                lArtefato(new String(responseBody));
+                ListarArtefato(new String(responseBody));
 
             }
 
@@ -44,7 +44,7 @@ public class ListarArtefatoActivity extends AppCompatActivity {
         }
     }
 
-    private void lArtefato(String r) {
+    private void ListarArtefato(String r) {
         ArryList<ArtefatosCRUDRemoto> lista = new ArryList<ArtefatosCRUDRemoto>();
         try {
             JSONArray JSON = new JSONArray(r);
@@ -55,8 +55,8 @@ public class ListarArtefatoActivity extends AppCompatActivity {
 
             }
         }catch{
-            
-        }
+
+       }
 
 
     }

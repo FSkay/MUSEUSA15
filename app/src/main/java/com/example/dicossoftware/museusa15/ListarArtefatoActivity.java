@@ -33,7 +33,7 @@ public class ListarArtefatoActivity extends AppCompatActivity {
             JSONArray JSON = new JSONArray(r);
             for (int i = 0; i < JSON.length(); i++) {
                 ArtefatosCRUDRemoto a = new ArtefatosCRUDRemoto();
-                a.setnomid
+                a.
 
 
             }

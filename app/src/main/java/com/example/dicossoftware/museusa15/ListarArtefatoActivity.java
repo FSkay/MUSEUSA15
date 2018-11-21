@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-
 import org.json.JSONArray;
+import java.util.ArrayList;
 
 public class ListarArtefatoActivity extends AppCompatActivity {
 
@@ -28,7 +28,7 @@ public class ListarArtefatoActivity extends AppCompatActivity {
     }
     
     public void ListarArtefato(String r) {
-        ArryList<ArtefatosCRUDRemoto> lista = new ArryList<ArtefatosCRUDRemoto>();
+        ArrayList<ArtefatosCRUDRemoto> lista = new ArrayList<ArtefatosCRUDRemoto>();
         try {
             JSONArray JSON = new JSONArray(r);
             for (int i = 0; i < JSON.length(); i++) {

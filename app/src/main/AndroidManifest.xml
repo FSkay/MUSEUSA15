@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dicossoftware.museusa15">
-
+    
+    <uses-feature android:name="android.hardware.camera"
+                  android:required="true" />
     <permission android:name="android.permission.CAMERA" />
     <permission android:name="android.permission.INTERNET" />
 
